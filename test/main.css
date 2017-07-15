@@ -1,0 +1,13 @@
+.box {
+    margin: 30px;
+    width: 400px;
+    height: 200px;
+    background-color: #E0F1F3;
+}
+.box label {
+    display: block;
+    padding: 10px;
+}
+.box input {
+    margin: 10px;
+}

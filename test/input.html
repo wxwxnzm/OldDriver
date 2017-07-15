@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>input相关</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="box">
+        <label>autoComplete函数自动补全和消除 '-'(长度为10)</label>
+        <input type="text" class="autoComplete">
+    </div>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
+    <script src="../src/input.js"></script>
+    <script>
+        $('.autoComplete').on('input', function () {
+            $('.autoComplete').val(inputObj.autoComplete($('.autoComplete').val(), '--', 200));
+        });
+    </script>
+</body>
+</html>
